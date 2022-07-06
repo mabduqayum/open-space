@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background-color: #000;
+}
+
+img {
+    max-width: 100%;
+}
+
+button {
+    border-style: none;
+}
+
+input[type=range][aria-orientation=vertical] {
+    -webkit-appearance: slider-vertical;
+}
+
+.space {
+    height: 100vh;
+    background-image: url("assets/space.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.planet-area {
+    position: absolute;
+    bottom: 0;
+    width: 600px;
+    height: 600px;
+    overflow: hidden;
+}
+
+.planet {
+    position: absolute;
+    bottom: -5px;
+    left: -5px;
+    z-index: 2;
+    width: 600px;
+}
+
+.rocket {
+    position: absolute;
+    bottom: 310px;
+    left: 305px;
+    width: 200px;
+    transform: rotate(30deg);
+}
+
+.control-panel {
+    position: absolute;
+    right: 100px;
+    bottom: 100px;
+    width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    backdrop-filter: blur(20px) invert(0.1) opacity(0.5);
+}
+
+.control-panel > input {
+    border-radius: 2px;
+    border: none;
+}
+
+.control-panel > input:first-of-type {
+    flex-basis: 70%;
+}
+
+.control-panel > input:nth-of-type(2) {
+    margin-left: 5%;
+    flex-basis: 25%;
+    padding: 8px 12px;
+}
+
+.check-buttons {
+    margin-block: 20px;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.check-buttons > input {
+}
+
+.levers {
+    margin-block: 20px;
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.levers > input {
+    width: 20px;
+    height: 150px;
+}
+
+.control-panel > input:last-of-type {
+    padding: 8px 12px;
+}

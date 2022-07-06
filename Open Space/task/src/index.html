@@ -6,12 +6,38 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
+
 <div class="space">
-    <img alt="" src="assets/space.webp"/>
-    <img class="planet-area" alt="" src="assets/mars.webp"/>
-    <img class="rocket" alt="" src="assets/rocket.webp"/>
+    <div class="planet-area">
+        <img class="planet" alt="" src="assets/mars.webp"/>
+        <img class="rocket" alt="" src="assets/rocket.webp"/>
+    </div>
+    <div class="control-panel">
+        <input type="number">
+        <input type="submit"  name="ok">
+        <div class="check-buttons">
+            <input type="checkbox">
+            <input type="checkbox">
+            <input type="checkbox">
+            <input type="checkbox">
+            <input type="checkbox">
+            <input type="checkbox">
+        </div>
+        <div class="levers">
+            <input type="range" min="1" max="100" value="50" class="slider" aria-orientation="vertical">
+            <input type="range" min="1" max="100" value="50" class="slider" aria-orientation="vertical">
+            <input type="range" min="1" max="100" value="50" class="slider" aria-orientation="vertical">
+            <input type="range" min="1" max="100" value="50" class="slider" aria-orientation="vertical">
+            <input type="range" min="1" max="100" value="50" class="slider" aria-orientation="vertical">
+        </div>
+        <input type="submit"  name="ok">
+    </div>
 </div>
+
 </body>
+
 </html>
