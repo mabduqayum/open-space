@@ -26,6 +26,12 @@ input[type=range][aria-orientation=vertical] {
     -webkit-appearance: slider-vertical;
 }
 
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
 .space {
     height: 100vh;
     background-image: url("assets/space.webp");
@@ -59,23 +65,26 @@ input[type=range][aria-orientation=vertical] {
 
 .control-panel {
     position: absolute;
-    right: 100px;
-    bottom: 100px;
+    right: 50px;
+    bottom: 50px;
     width: 400px;
     padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     backdrop-filter: blur(20px) invert(0.1) opacity(0.5);
+    border: 10px solid #0a0b21ba;
 }
 
 .control-panel > input {
     border-radius: 2px;
     border: none;
+    font-size: 16px;
 }
 
 .control-panel > input:first-of-type {
     flex-basis: 70%;
+    padding-inline: 8px;
 }
 
 .control-panel > input:nth-of-type(2) {
