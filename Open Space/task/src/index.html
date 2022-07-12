@@ -7,6 +7,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
 </head>
 
 <body>
@@ -18,24 +19,34 @@
     </div>
     <div class="control-panel">
         <div class="control-panel__inner">
-            <input type="password"  class="password-field" placeholder="Enter password">
-            <input type="submit" value="ok" class="submit-password">
+            <input id="password-field"
+                   class="password-field"
+                   type="password"
+                   placeholder="Enter password"
+                   autocomplete>
+            <input class="submit-password"
+                   type="submit"
+                   value="ok"
+                   onclick="onSubmitPassword(this, event)">
             <div class="check-buttons">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
-                <input type="checkbox">
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
+                <input type="checkbox" disabled>
             </div>
             <div class="levers">
-                <input type="range" min="1" max="100" value="50" class="slider" aria-orientation="vertical">
-                <input type="range" min="1" max="100" value="50" class="slider" aria-orientation="vertical">
-                <input type="range" min="1" max="100" value="50" class="slider" aria-orientation="vertical">
-                <input type="range" min="1" max="100" value="50" class="slider" aria-orientation="vertical">
-                <input type="range" min="1" max="100" value="50" class="slider" aria-orientation="vertical">
+                <input type="range" disabled min="1" max="100" value="50" class="slider" aria-orientation="vertical">
+                <input type="range" disabled min="1" max="100" value="50" class="slider" aria-orientation="vertical">
+                <input type="range" disabled min="1" max="100" value="50" class="slider" aria-orientation="vertical">
+                <input type="range" disabled min="1" max="100" value="50" class="slider" aria-orientation="vertical">
+                <input type="range" disabled min="1" max="100" value="50" class="slider" aria-orientation="vertical">
             </div>
-            <input type="submit" value="launch" class="launch-rocket">
+            <input class="launch-rocket"
+                   type="submit"
+                   disabled
+                   value="launch">
         </div>
     </div>
 </div>
