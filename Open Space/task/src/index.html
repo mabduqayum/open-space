@@ -15,7 +15,7 @@
 <div class="space">
     <div class="planet-area">
         <img class="planet" alt="" src="assets/mars.webp"/>
-        <img class="rocket" alt="" src="assets/rocket.webp"/>
+        <img id="rocket" class="rocket" alt="" src="assets/rocket.webp"/>
     </div>
     <div class="control-panel">
         <div class="control-panel__inner">
@@ -29,19 +29,24 @@
                    value="ok"
                    onclick="onSubmitPassword(this, event)">
             <div class="check-buttons">
-                <input type="checkbox" disabled>
-                <input type="checkbox" disabled>
-                <input type="checkbox" disabled>
-                <input type="checkbox" disabled>
-                <input type="checkbox" disabled>
-                <input type="checkbox" disabled>
+                <input type="checkbox" disabled onchange="getLaunchStatus()">
+                <input type="checkbox" disabled onchange="getLaunchStatus()">
+                <input type="checkbox" disabled onchange="getLaunchStatus()">
+                <input type="checkbox" disabled onchange="getLaunchStatus()">
+                <input type="checkbox" disabled onchange="getLaunchStatus()">
+                <input type="checkbox" disabled onchange="getLaunchStatus()">
             </div>
             <div class="levers">
-                <input type="range" disabled min="1" max="100" value="50" class="slider" aria-orientation="vertical">
-                <input type="range" disabled min="1" max="100" value="50" class="slider" aria-orientation="vertical">
-                <input type="range" disabled min="1" max="100" value="50" class="slider" aria-orientation="vertical">
-                <input type="range" disabled min="1" max="100" value="50" class="slider" aria-orientation="vertical">
-                <input type="range" disabled min="1" max="100" value="50" class="slider" aria-orientation="vertical">
+                <input class="slider" aria-orientation="vertical" type="range" onchange="getLaunchStatus()" disabled
+                       min="1" max="100" value="50">
+                <input class="slider" aria-orientation="vertical" type="range" onchange="getLaunchStatus()" disabled
+                       min="1" max="100" value="50">
+                <input class="slider" aria-orientation="vertical" type="range" onchange="getLaunchStatus()" disabled
+                       min="1" max="100" value="50">
+                <input class="slider" aria-orientation="vertical" type="range" onchange="getLaunchStatus()" disabled
+                       min="1" max="100" value="50">
+                <input class="slider" aria-orientation="vertical" type="range" onchange="getLaunchStatus()" disabled
+                       min="1" max="100" value="50">
             </div>
             <input class="launch-rocket"
                    type="submit"
